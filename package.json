@@ -29,5 +29,6 @@
     "slice"
   ],
   "author": "Lily Skye <me@suchipi.com>",
+  "repository": "suchipi/markdown-slice",
   "license": "MIT"
 }
