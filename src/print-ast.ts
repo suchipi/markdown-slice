@@ -3,7 +3,7 @@ import util from "node:util";
 import { remark } from "remark";
 import grayMatter from "gray-matter";
 
-export function printAst(rawMarkdown) {
+export function printAst(rawMarkdown: string) {
   const { content } = grayMatter(rawMarkdown);
   const ast = remark.parse(content);
 
