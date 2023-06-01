@@ -3,3 +3,4 @@
 - [x] publish
 - [ ] 'querySelectorAll' equivalent
 - [ ] easier way to say "second one", "third one", etc. right now always selects first one
+- [ ] straightforward "did it match?" check. maybe related to all; allow "matched zero" or etc
