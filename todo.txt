@@ -1,3 +1,5 @@
-- [ ] tests
-- [ ] accept input from either stdin or file
-- [ ] publish
+- [x] tests
+- [x] accept input from either stdin or file
+- [x] publish
+- [ ] 'querySelectorAll' equivalent
+- [ ] easier way to say "second one", "third one", etc. right now always selects first one
