@@ -1,0 +1,3 @@
+- [ ] tests
+- [ ] accept input from either stdin or file
+- [ ] publish

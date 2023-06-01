@@ -1,0 +1,25 @@
+{
+  "name": "markdown-slice",
+  "version": "0.1.0",
+  "description": "Print a specific subset of a markdown document by using query selectors",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@suchipi/esquery": "^1.0.1",
+    "clefairy": "^0.4.0",
+    "gray-matter": "^4.0.3",
+    "remark": "^14.0.3"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "markdown",
+    "query",
+    "selector",
+    "slice"
+  ],
+  "author": "Lily Skye <me@suchipi.com>",
+  "license": "MIT"
+}
