@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { runCLI, fixturesDir, cleanResult } from "./test-utils";
+import { runCLI, fixturesDir } from "./test-utils";
 
 test("slicing - simple", async () => {
   const run = runCLI([
@@ -12,7 +12,7 @@ test("slicing - simple", async () => {
   ]);
   await run.completion;
   expect(run.result.code).toBe(0);
-  expect(cleanResult(run.result).stdout).toMatchInlineSnapshot(`
+  expect(run.result.stdout).toMatchInlineSnapshot(`
     "# \`markdown-slice\`
 
     > prints a subset of a markdown document"
@@ -29,7 +29,7 @@ test("slicing - doc start", async () => {
   ]);
   await run.completion;
   expect(run.result.code).toBe(0);
-  expect(cleanResult(run.result).stdout).toMatchInlineSnapshot(`
+  expect(run.result.stdout).toMatchInlineSnapshot(`
     "# \`markdown-slice\`
 
     > prints a subset of a markdown document
@@ -48,7 +48,7 @@ test("slicing - doc end", async () => {
   ]);
   await run.completion;
   expect(run.result.code).toBe(0);
-  expect(cleanResult(run.result).stdout).toMatchInlineSnapshot(`
+  expect(run.result.stdout).toMatchInlineSnapshot(`
     "
 
     MIT
@@ -67,7 +67,7 @@ test("slicing - reading from stdin", async () => {
   run.close("stdin");
   await run.completion;
   expect(run.result.code).toBe(0);
-  expect(cleanResult(run.result).stdout).toMatchInlineSnapshot(`
+  expect(run.result.stdout).toMatchInlineSnapshot(`
     "# hi
 
     ## hi again"

@@ -1,11 +1,11 @@
 import { test, expect } from "vitest";
-import { runCLI, fixturesDir, cleanResult } from "./test-utils";
+import { runCLI, fixturesDir } from "./test-utils";
 
 test("--print", async () => {
   const run = runCLI(["-i", fixturesDir("README.md"), "--print"]);
   await run.completion;
   expect(run.result.code).toBe(0);
-  expect(cleanResult(run.result).stdout).toMatchInlineSnapshot(`
+  expect(run.result.stdout).toMatchInlineSnapshot(`
     "{
       type: [32m'root'[39m,
       children: [
